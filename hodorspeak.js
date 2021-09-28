@@ -1,14 +1,14 @@
-var btnTranslate = document.querySelector("#btn-translate");
-var textArea = document.querySelector("#btn-text");
-var output = document.querySelector("#output");
+var userInput = document.querySelector("#txt-input")
+var userOutput = document.querySelector("#output")
+var btnTranslate = document.querySelector('#btn-translate')
 var url = "https://api.funtranslations.com/translate/hodor.json"
 
-function finalURL(text) {
+function finalurl(text) {
     return url + "?text=" + text
 }
 
 function clickHandler() {
-    fetch(finalURL(textArea.value))
+    fetch(finalurl(userInput))
         .then(response => response.json())
         .then(json => {
                 var translatedText = json.contents.translated;
@@ -17,4 +17,5 @@ function clickHandler() {
 
         )
 }
+    
 btnTranslate.addEventListener("click", clickHandler)

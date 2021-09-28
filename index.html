@@ -5,34 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minions Speak</title>
+    <title>Hodor Speak</title>
     <style>
         textarea {
+            border: 1px solid black;
             width: 80%;
             height: 10vh;
             display: block;
-            margin: 1rem;
+            margin: auto;
             padding: 1rem;
+           
+            
         }
 
         #output {
             border: 1px solid black;
             height: 10vh;
             width: 80%;
-            margin: 1rem;
+            margin: auto;
             padding: 1rem;
 
         }
+        #Textfirst{
+            text-align: center;
+        }
+        #Texttwo{
+            text-align: center;
+        }
+        #btn-translate{
+           
+           display: block;
+           margin: auto;
+  
+  
+            
+            
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>Welcome to Hodor Speak</h1>
-    <textarea id="btn-text" placeholder="Enter the text to be translated here"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: larger;"> Translated Text 👇</div>
+    <h1 id="Textfirst">Welcome to Hodor Speak</h1>
+    <textarea id="txt-input" placeholder="Type the text to be translated here"></textarea>
+    <br />
+    <button id="btn-translate">TRANSLATE</button>
+    <h1 id="Texttwo">Translated text:</h1>
+
     <div id="output"></div>
-    <script src="hodorspeak.js" type="text/javaScript"></script>
+    <script src="hodorspeak.js" type="text/Javascript"></script>
+
 </body>
 
 </html>
