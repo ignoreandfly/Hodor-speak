@@ -8,7 +8,7 @@ function finalurl(text) {
 }
 
 function clickHandler() {
-    fetch(finalurl(userInput))
+    fetch(finalurl(userInput.value))
         .then(response => response.json())
         .then(json => {
                 var translatedText = json.contents.translated;
